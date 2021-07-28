@@ -8,16 +8,13 @@ function App() {
     <div className="App">
       <Router>
         <div className="navigation">
-          <div>
-            <a href="/">
-              <img
-                src="../public/images/logo.png"
-                height="100px
-            "
-                alt="logo-business-name"
-              />
-            </a>
-          </div>
+          <a href="/">
+            <img
+              src="/images/logo.png"
+              alt="logo-business-name"
+              className="logo-name"
+            />
+          </a>
           <Link className="link-nav" to="/">
             HOME
           </Link>
