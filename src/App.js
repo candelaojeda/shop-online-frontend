@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import Catalogue from "./components/Catalogue";
 import Detail from "./components/Detail";
@@ -8,6 +8,16 @@ function App() {
     <div className="App">
       <Router>
         <div className="navigation">
+          <div>
+            <a href="/">
+              <img
+                src="../public/images/logo.png"
+                height="40px
+            "
+                alt="logo-business-name"
+              />
+            </a>
+          </div>
           <Link className="link-nav" to="/">
             HOME
           </Link>

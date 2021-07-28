@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
 *{
+  width: 100%;
+  margin: 0px;
   font-family: 'Mulish', sans-serif;
   color: #252525;
 }

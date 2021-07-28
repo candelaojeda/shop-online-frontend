@@ -1,1 +1,18 @@
-
+.navigation {
+  width: 100%;
+  background: rgb(91, 91, 94);
+  padding: 10px;
+}
+.link-nav {
+  background: rgb(91, 91, 94);
+  margin: 2px;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.link-nav:hover {
+  color: rgb(3, 3, 3);
+}
