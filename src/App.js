@@ -12,7 +12,7 @@ function App() {
             <a href="/">
               <img
                 src="../public/images/logo.png"
-                height="40px
+                height="100px
             "
                 alt="logo-business-name"
               />
