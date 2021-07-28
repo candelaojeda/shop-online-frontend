@@ -16,14 +16,16 @@ export default function Catalogue() {
     return null;
   }
   return (
-    <div>
+    <div className="listProducts">
       {data.map((item) => (
-        <ul key={item.id}>
-          <li>{item.images}</li>
-          <li>{item.title}</li>
-          <li>{item.currency}</li>
-          <li>{item.price}</li>
-        </ul>
+        <a href="/detail">
+          <ul key={item.id} className="products">
+            <li>{item.images}</li>
+            <li>{item.title}</li>
+            <li>{item.currency}</li>
+            <li>{item.price}</li>
+          </ul>
+        </a>
       ))}
     </div>
   );
