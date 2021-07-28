@@ -37,9 +37,7 @@ function App() {
                   <img src="/images/banner_2.jpg" alt="banner2"></img>
                   <img src="/images/banner_3.jpg" alt="banner3"></img>
                 </div>
-                <div>
-
-                </div>
+                <div></div>
               </div>
             );
           }}
@@ -52,15 +50,3 @@ function App() {
 }
 
 export default App;
-
-
-// useEffect(
-//     function () {
-//       axios.get(url)
-//         .then((res) => {
-//             const products = res.data.items;
-//             getData(products);
-//         })
-//     },
-//     [url]
-//   );
