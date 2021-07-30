@@ -96,6 +96,9 @@ acerca del producto.
 [https://day.js.org/](https://day.js.org/)
 
 #### Links de ayuda utilizados
+[https://getbootstrap.com/docs/5.0/components/carousel/](https://getbootstrap.com/docs/5.0/components/carousel/)
+
+[https://getbootstrap.com/docs/5.0/components/navbar/](https://getbootstrap.com/docs/5.0/components/navbar/)
 
 ## Acerca de los requerimientos
 - npm o yarn
