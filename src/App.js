@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Catalogue from "./components/Catalogue";
 import Detail from "./components/Detail";
 import Navbar from "./components/Navbar";
+import Carousel from "./components/Carousel";
 //import { shuffle } from "lodash";
 
 function App() {
@@ -39,11 +40,12 @@ function App() {
             render={() => {
               return (
                 <div>
-                  <div>
+                  <Carousel/>
+                  {/* <div>
                     <img src="/images/banner_1.jpg" alt="banner1" width="100%"></img>
                     <img src="/images/banner_2.jpg" alt="banner2" width="100%"></img>
                     <img src="/images/banner_3.jpg" alt="banner3" width="100%"></img>
-                  </div>
+                  </div> */}
                   <div className="listProducts">
                     {data.map((item) => (
                       <div key={item.id} className="products">

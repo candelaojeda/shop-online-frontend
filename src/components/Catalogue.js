@@ -19,7 +19,6 @@ export default function Catalogue() {
     <>
       <div className="listProducts">
         {data.map((item) => (
-          
             <div key={item.id} className="products">
               <div>{item.images}</div>
               <div>{item.title}</div>
