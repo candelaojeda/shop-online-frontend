@@ -6,6 +6,7 @@ import Catalogue from "./components/Catalogue";
 import Detail from "./components/Detail";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
+import Copyright from "./components/Copyright";
 //import { shuffle } from "lodash";
 
 function App() {
@@ -40,12 +41,7 @@ function App() {
             render={() => {
               return (
                 <div>
-                  <Carousel/>
-                  {/* <div>
-                    <img src="/images/banner_1.jpg" alt="banner1" width="100%"></img>
-                    <img src="/images/banner_2.jpg" alt="banner2" width="100%"></img>
-                    <img src="/images/banner_3.jpg" alt="banner3" width="100%"></img>
-                  </div> */}
+                  <Carousel />
                   <div className="listProducts">
                     {data.map((item) => (
                       <div key={item.id} className="products">
@@ -64,7 +60,7 @@ function App() {
           <Route path="/details" component={Detail}></Route>
         </Switch>
       </Router>
-      <footer className="copyright">Copyright</footer>
+      <Copyright />
     </div>
   );
 }
