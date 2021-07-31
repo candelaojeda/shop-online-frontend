@@ -42,16 +42,25 @@ function App() {
               return (
                 <div>
                   <Carousel />
-                  <div className="listProducts">
+                  <h3>Más vistos...</h3>
+                  <div className="listProducts-home">
                     {data.map((item) => (
-                      <div key={item.id} className="products">
-                        <div>{item.id}</div>
-                        <div>{item.title}</div>
-                        <div>{item.price}</div>
-                        <div>{item.images}</div>
+                      <div key={item.id} className="products-home">
+                        <div className="title">{item.title}</div>
+                        <div className="currency">
+                          {item.currency}
+                          {item.price}
+                        </div>
+                        <img
+                          src={item.images[0]}
+                          alt="img"
+                          width="100%"
+                          height="60%"
+                        ></img>
                       </div>
                     ))}
                   </div>
+                  <h4>Todos los medios de pago</h4>
                 </div>
               );
             }}

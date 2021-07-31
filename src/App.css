@@ -1,12 +1,13 @@
 .listProducts {
-  width: 45%;
-  height: 15%;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-auto-rows: minmax(400px, auto);
+  align-items: center;
+  margin-left: 10%;
 }
 .products {
-  border: rgb(172, 171, 171) solid 1px;
-  border-radius: 10px;
+  border: rgb(214, 214, 214) solid 1px;
   margin: 10px;
-  padding: 20px;
 }
 .form-detail {
   margin: 5% 10%;
@@ -25,10 +26,50 @@
   font-size: 18px;
 }
 .copyright {
-  bottom: 0;
   background-color: rgb(27, 23, 23);
   width: 100%;
   color: rgb(172, 171, 171);
   text-align: center;
   padding: 10px;
+  margin-top: 10%;
+}
+.info-products{
+  background: rgb(240, 240, 240);
+  text-align: center;
+  padding: 5px;
+}
+.title{
+  font-weight: bold;
+  font-size: 20px;
+}
+.currency{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+}
+.listProducts-home{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px 50px 50px 50px;
+}
+.products-home{
+  text-align: center;
+  margin: 20px;
+  background: rgb(240, 240, 240);
+  border: rgb(214, 214, 214) solid 1px;
+}
+h3{
+  font-weight: bold;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  margin-top: 3%;
+  background: linear-gradient(to left, #3c269b, #e9b423);
+}
+h4{
+  font-weight: bold;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  margin-top: 3%;
+  background: linear-gradient(to left, #3c269b, #e9b423);
 }

@@ -21,8 +21,9 @@ export default function Detail() {
         {data.map((item) => (
           <div key={item.id} className="products">
             <div>{item.id}</div>
-            <div>{item.images}</div>
-            <div>{item.title}</div>
+            <img src={item.images[0]} alt="img" width="50%" height="50%"></img>
+            <img src={item.images[1]} alt="img" width="50%" height="50%"></img>
+            <img src={item.images[2]} alt="img" width="50%" height="50%"></img>
             <div>{item.currency}</div>
             <div>{item.price}</div>
           </div>
