@@ -24,7 +24,16 @@ export default function Catalogue() {
             <img src={item.images[0]} alt="img" width="100%" height="80%"></img>
             <div className="info-products">
               <div className="title">{item.title}</div>
-              <div className="currency">{item.currency}{item.price}</div>
+              <div>
+                {item.offer === null ? (
+                  <div className="currency">
+                    {item.currency}
+                    {item.price}
+                  </div>
+                ) : (
+                  <h6 className="offer">O F E R T A ¡{item.offer.price}!</h6>
+                )}
+              </div>
             </div>
           </div>
         ))}

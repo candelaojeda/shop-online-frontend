@@ -33,43 +33,63 @@
   padding: 10px;
   margin-top: 10%;
 }
-.info-products{
+.info-products {
   background: rgb(240, 240, 240);
   text-align: center;
   padding: 5px;
 }
-.title{
+.title {
   font-weight: bold;
   font-size: 20px;
 }
-.currency{
+.currency {
   font-weight: bold;
   font-size: 20px;
   color: rgb(255, 0, 0);
 }
-.listProducts-home{
+.listProducts-home {
   display: flex;
   align-items: center;
   text-align: center;
   margin: 10px 50px 50px 50px;
 }
-.products-home{
+.products-home {
   text-align: center;
   margin: 20px;
   background: rgb(240, 240, 240);
   border: rgb(214, 214, 214) solid 1px;
 }
-h3{
+h3 {
   font-weight: bold;
   color: rgb(240, 240, 240);
   text-align: center;
   margin-top: 3%;
   background: linear-gradient(to left, #3c269b, #e9b423);
 }
-h4{
+h4 {
   font-weight: bold;
   color: rgb(240, 240, 240);
   text-align: center;
   margin-top: 3%;
   background: linear-gradient(to left, #3c269b, #e9b423);
+}
+.offer {
+  color: rgb(6, 126, 2);
+  font-weight: bold;
+  background: rgb(124, 197, 122);
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.pay {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h5 {
+  font-weight: bold;
+  font-size: 15px;
 }

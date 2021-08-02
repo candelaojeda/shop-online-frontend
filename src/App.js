@@ -7,7 +7,6 @@ import Detail from "./components/Detail";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import Copyright from "./components/Copyright";
-//import { shuffle } from "lodash";
 
 function App() {
   let [data, setData] = useState([]);
@@ -19,16 +18,6 @@ function App() {
     },
     [url]
   );
-
-  // const shuffleArray = (array) => {
-  //   for (let i = array.length - 1; i > 0; i--) {
-  //     const j = Math.floor(Math.random() * (i + 1));
-  //     const temp = array[i];
-  //     array[i] = array[j];
-  //     array[j] = temp;
-  //   }
-  //   return array;
-  // };
 
   return (
     <div className="App">
@@ -61,6 +50,12 @@ function App() {
                     ))}
                   </div>
                   <h4>Todos los medios de pago</h4>
+                  <div className="pay">
+                    <h5>Tarjetas de crédito</h5>
+                    <h5>Tarjetas de débito</h5>
+                    <h5>Mercado pago</h5>
+                    <h5>Efectivo</h5>
+                  </div>
                 </div>
               );
             }}
