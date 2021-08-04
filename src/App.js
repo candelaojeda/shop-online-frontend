@@ -7,6 +7,7 @@ import Detail from "./components/Detail";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import Copyright from "./components/Copyright";
+import _ from "underscore";
 
 function App() {
   let [data, setData] = useState([]);
@@ -19,6 +20,7 @@ function App() {
     [url]
   );
 
+  let shuffleArray = _.shuffle(data);
   return (
     <div className="App">
       <Router>
@@ -33,15 +35,15 @@ function App() {
                   <Carousel />
                   <h3>Más vistos...</h3>
                   <div className="listProducts-home">
-                    {data.map((item) => (
-                      <div key={item.id} className="products-home">
-                        <div className="title">{item.title}</div>
+                    {shuffleArray.map((shuffles) => (
+                      <div key={shuffles.id} className="products-home">
+                        <div className="title">{shuffles.title}</div>
                         <div className="currency">
-                          {item.currency}
-                          {item.price}
+                          {shuffles.currency}
+                          {shuffles.price}
                         </div>
                         <img
-                          src={item.images[0]}
+                          src={shuffles.images[0]}
                           alt="img"
                           width="100%"
                           height="60%"

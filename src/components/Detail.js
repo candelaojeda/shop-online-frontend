@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ImageGallery from "react-image-gallery"; //esto 1ro
+import ImageGallery from "react-image-gallery";
 
 export default function Detail() {
   let [data, setData] = useState([]);
@@ -22,9 +22,9 @@ export default function Detail() {
         {data.map((item) => (
           <div key={item.id} className="products">
             <div>{item.id}</div>
-            
-              <ImageGallery items={item.images}/>
-            
+
+            <ImageGallery items={item.images}/>
+
             {/* <img src={item.images[0]} alt="img" width="50%" height="50%"></img>
             <img src={item.images[1]} alt="img" width="50%" height="50%"></img>
             <img src={item.images[2]} alt="img" width="50%" height="50%"></img> */}
@@ -55,7 +55,9 @@ export default function Detail() {
             />
           </div>
           <div>
-            <button type="submit" className="btn-submit">Enviar</button>
+            <button type="submit" className="btn-submit">
+              Enviar
+            </button>
           </div>
         </form>
       </div>
