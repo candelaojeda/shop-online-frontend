@@ -36,11 +36,6 @@ export default function Navbar() {
                   CATÁLOGO
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/details">
-                  DETALLE
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
