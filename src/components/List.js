@@ -5,7 +5,7 @@ export default function List({ products, onProductSelected }) {
 
   return (
     <div>
-      <div>
+      <div className="listProducts">
         {products.map((item) => (
           <ListItem key={item.id} product={item} onProductSelected={onProductSelected} />
         ))}
