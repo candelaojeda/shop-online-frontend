@@ -1,9 +1,12 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import List from "./List";
+import { useHistory } from "react-router-dom";
 
 export default function Catalogue() {
   let [data, setData] = useState([]);
+  const history = useHistory();
   let url = "https://rooftop-api-rest-frontend.herokuapp.com/items";
 
   useEffect(
@@ -12,6 +15,11 @@ export default function Catalogue() {
     },
     [url]
   );
+
+  const handleSelectedProduct = (product) => {
+    history.push("/details", {product})
+  }
+
   if (!data.length) {
     return null;
   }
@@ -19,24 +27,7 @@ export default function Catalogue() {
     <>
       <h3>PRODUCTOS</h3>
       <div className="listProducts">
-        {data.map((item) => (
-          <div key={item.id} className="products">
-            <img src={item.images[0]} alt="img" width="100%" height="80%"></img>
-            <div className="info-products">
-              <div className="title">{item.title}</div>
-              <div>
-                {item.offer === null ? (
-                  <div className="currency">
-                    {item.currency}
-                    {item.price}
-                  </div>
-                ) : (
-                  <h6 className="offer">O F E R T A ¡{item.offer.price}!</h6>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
+        <List onProductSelected={handleSelectedProduct} products={data}/>
       </div>
     </>
   );
