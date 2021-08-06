@@ -26,7 +26,7 @@ export default function Catalogue() {
   return (
     <>
       <h3>PRODUCTOS</h3>
-      <div className="listProducts">
+      <div>
         <List onProductSelected={handleSelectedProduct} products={data}/>
       </div>
     </>
