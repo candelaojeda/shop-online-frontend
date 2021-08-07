@@ -9,22 +9,6 @@
   border: rgb(214, 214, 214) solid 1px;
   margin: 10px;
 }
-.form-detail {
-  margin: 5% 10%;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-}
-.btn-submit {
-  margin-top: 5px;
-  width: 90px;
-  height: 40px;
-  background: rgb(172, 171, 171);
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 18px;
-}
 .copyright {
   background-color: rgb(27, 23, 23);
   width: 100%;
@@ -74,9 +58,8 @@ h4 {
   background: linear-gradient(to left, #3c269b, #e9b423);
 }
 .offer {
-  color: rgb(6, 126, 2);
+  color: rgb(18, 240, 11);
   font-weight: bold;
-  background: rgb(124, 197, 122);
   letter-spacing: 1.5px;
   font-size: 18px;
 }
@@ -92,4 +75,77 @@ h4 {
 h5 {
   font-weight: bold;
   font-size: 15px;
+}
+.img-detail {
+  margin: 40px;
+}
+.title-detail {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.price-detail {
+  text-align: center;
+  letter-spacing: 3px;
+}
+.offer-detail {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: rgb(13, 156, 8);
+}
+.currency-price-detail {
+  text-align: center;
+  letter-spacing: 3px;
+  text-decoration: line-through;
+  font-weight: bold;
+  font-size: 20px;
+}
+.input {
+  height: 30px;
+  width: 300px;
+  padding: 5px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  font-weight: bold;
+}
+.input:focus {
+  background-color: rgb(214, 214, 214);
+  text-decoration: none;
+}
+.form-detail {
+  text-align: center;
+  border: 2px solid rgb(117, 117, 117);
+  border-radius: 10px;
+  margin: 5%;
+  margin-left: 30%;
+  padding: 3%;
+  width: 550px;
+}
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+}
+.label {
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(27, 23, 23);
+}
+.btn-submit {
+  margin-top: 10%;
+  padding: 10px 40px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgb(27, 23, 23);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
 }
