@@ -1,65 +1,57 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import { useLocation } from "react-router-dom";
+import Formulary from "./Formulary";
+import Question from "./Question";
 
 export default function Detail() {
-  let [data, setData] = useState([]);
-  let url = "https://rooftop-api-rest-frontend.herokuapp.com/items";
+  const location = useLocation();
+  const product = location.state.product;
 
-  useEffect(
-    function () {
-      axios.get(url).then((res) => setData(res.data.items));
-    },
-    [url]
-  );
-  if (!data.length) {
+  const images = product.images.map((img) => {
+    return {
+      original: img,
+      thumbnail: img,
+    };
+  });
+
+  if (!Object.keys(product).length) {
     return null;
   }
   return (
     <>
-      <div className="listProducts">
-        {data.map((item) => (
-          <div key={item.id} className="products">
-            <div>{item.id}</div>
-
-            <ImageGallery items={item.images}/>
-
-            {/* <img src={item.images[0]} alt="img" width="50%" height="50%"></img>
-            <img src={item.images[1]} alt="img" width="50%" height="50%"></img>
-            <img src={item.images[2]} alt="img" width="50%" height="50%"></img> */}
-            <div>{item.currency}</div>
-            <div>{item.price}</div>
-          </div>
-        ))}
+      <div>
+        <h1 className="title-detail">{product.title}</h1>
+        <div className="img-detail">
+          <ImageGallery
+            items={images}
+            slideDuration={500}
+            showPlayButton={false}
+          />
+        </div>
+        <div>
+          {product.offer === null ? (
+            <div className="offer-detail">
+              {product.currency}
+              {product.price}
+            </div>
+          ) : (
+            <div>
+              <p className="offer-detail">
+                O F E R T A ¡{product.offer.price}!
+              </p>
+              <p className="currency-price-detail">
+                Antes: {product.currency}
+                {product.price}
+              </p>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="form-detail">
-        <form>
-          <div className="textarea">
-            <textarea
-              name="about"
-              cols="15"
-              rows="6"
-              placeholder="Me gustaría consultar acerca de este producto..."
-              required=""
-              pattern="[a-zA-Z]+"
-            ></textarea>
-          </div>
-          <div className="input-email">
-            <input
-              type="text"
-              name="mail"
-              placeholder="Correo electrónico"
-              required=""
-              pattern="[a-zA-Z]+"
-            />
-          </div>
-          <div>
-            <button type="submit" className="btn-submit">
-              Enviar
-            </button>
-          </div>
-        </form>
+      <Question />
+      <div>
+        <Formulary />
       </div>
     </>
   );
