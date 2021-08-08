@@ -13,7 +13,9 @@ export default function ListItem({ product, onProductSelected }) {
               {product.price}
             </div>
           ) : (
-            <h6 className="offer">O F E R T A ¡{product.offer.price}!</h6>
+            <div>
+              <h6 className="offer">O F E R T A ¡{product.offer.price}!</h6>
+            </div>
           )}
         </div>
       </div>
