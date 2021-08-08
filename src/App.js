@@ -33,7 +33,7 @@ function App() {
               return (
                 <div>
                   <Carousel />
-                  <h3>Más vistos...</h3>
+                  <h3>MAS VISTOS...</h3>
                   <div className="listProducts-home">
                     {shuffleArray.map((shuffles) => (
                       <div key={shuffles.id} className="products-home">
@@ -51,12 +51,20 @@ function App() {
                       </div>
                     ))}
                   </div>
-                  <h4>Todos los medios de pago</h4>
+                  <h4>TODOS LOS MEDIOS DE PAGO</h4>
                   <div className="pay">
-                    <h5>Tarjetas de crédito</h5>
-                    <h5>Tarjetas de débito</h5>
-                    <h5>Mercado pago</h5>
-                    <h5>Efectivo</h5>
+                    <h5>
+                      <i class="fas fa-credit-card"></i>Tarjetas de crédito
+                    </h5>
+                    <h5>
+                      <i class="far fa-credit-card"></i>Tarjetas de débito
+                    </h5>
+                    <h5>
+                      <i class="fas fa-handshake"></i>Mercado pago
+                    </h5>
+                    <h5>
+                      <i class="fas fa-hand-holding-usd"></i>Efectivo
+                    </h5>
                   </div>
                 </div>
               );
