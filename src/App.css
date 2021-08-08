@@ -8,6 +8,7 @@
 .products {
   border: rgb(214, 214, 214) solid 1px;
   margin: 10px;
+  cursor: pointer;
 }
 .copyright {
   background-color: rgb(27, 23, 23);
@@ -47,8 +48,8 @@ h3 {
   font-weight: bold;
   color: rgb(240, 240, 240);
   text-align: center;
-  margin-top: 3%;
   background: linear-gradient(to left, #3c269b, #e9b423);
+  letter-spacing: 2px;
 }
 h4 {
   font-weight: bold;
@@ -58,7 +59,7 @@ h4 {
   background: linear-gradient(to left, #3c269b, #e9b423);
 }
 .offer {
-  color: rgb(18, 240, 11);
+  color: rgb(20, 187, 14);
   font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 18px;
@@ -74,7 +75,11 @@ h4 {
 }
 h5 {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
+}
+i {
+  margin: 1%;
+  padding: 3%;
 }
 .img-detail {
   margin: 40px;
@@ -122,7 +127,7 @@ h5 {
   border: 2px solid rgb(117, 117, 117);
   border-radius: 10px;
   margin: 5%;
-  margin-left: 30%;
+  margin-left: 32%;
   padding: 3%;
   width: 550px;
 }
@@ -148,4 +153,12 @@ h5 {
   border-radius: 4px;
   font-weight: bold;
   font-size: 14px;
+}
+.questions {
+  margin: 3%;
+  padding: 2%;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
 }
