@@ -16,7 +16,7 @@ export default function Shuffle() {
   let shuffleArray = _.shuffle(data);
   return (
     <div>
-      <h3>MAS VISTOS...</h3>
+      <h3>MAS VISTOS</h3>
       <div className="listProducts-home">
         {shuffleArray.map((shuffles) => (
           <div key={shuffles.id} className="products-home">
@@ -52,4 +52,3 @@ export default function Shuffle() {
     </div>
   );
 }
-
