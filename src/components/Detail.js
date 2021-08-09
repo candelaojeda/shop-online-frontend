@@ -4,6 +4,8 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import { useLocation } from "react-router-dom";
 import Formulary from "./Formulary";
 import Question from "./Question";
+import dayjs from "dayjs";
+import { difference } from "lodash";
 
 export default function Detail() {
   const location = useLocation();
@@ -15,6 +17,12 @@ export default function Detail() {
       thumbnail: img,
     };
   });
+
+  function datetime(difference) {
+    let date1 = dayjs(new Date(product.offer.expires_at));
+    let now = dayjs();
+    return difference = date1.diff(now, "days");
+  }
 
   if (!Object.keys(product).length) {
     return null;
@@ -41,10 +49,12 @@ export default function Detail() {
               <p className="offer-detail">
                 O F E R T A ¡{product.offer.price}!
               </p>
+
               <p className="currency-price-detail">
                 Antes: {product.currency}
                 {product.price}
               </p>
+              <p className="expire-at">Expira en {datetime(difference)} días.</p>
             </div>
           )}
         </div>
