@@ -100,6 +100,18 @@ acerca del producto.
 
 [https://getbootstrap.com/docs/5.0/components/navbar/](https://getbootstrap.com/docs/5.0/components/navbar/)
 
+[https://github.com/xiaolin/react-image-gallery/blob/master/example/app.js](https://github.com/xiaolin/react-image-gallery/blob/master/example/app.js)
+
+[https://edwardfhsiao.github.io/react-inputs-validation/](https://edwardfhsiao.github.io/react-inputs-validation/)
+
+[https://www.npmjs.com/package/yup](https://www.npmjs.com/package/yup)
+
+[https://react-bootstrap.github.io/components/modal/](https://react-bootstrap.github.io/components/modal/)
+
+[https://codingpotions.com/javascript-parsear-formatear-fechas](https://codingpotions.com/javascript-parsear-formatear-fechas)
+
+[https://zetcode.com/javascript/dayjs/](https://zetcode.com/javascript/dayjs/)
+
 ## Acerca de los requerimientos
 - npm o yarn
 - git
