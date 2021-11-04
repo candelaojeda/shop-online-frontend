@@ -54,7 +54,9 @@ export default function Detail() {
                 Antes: {product.currency}
                 {product.price}
               </p>
-              <p className="expire-at">Expira en {datetime(difference)} días.</p>
+              <p className="expire-at">
+                Expira en {datetime(difference)} días.
+              </p>
             </div>
           )}
         </div>
